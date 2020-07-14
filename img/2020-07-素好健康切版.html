@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>素好健康</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'>
+    <!-- //素友好 -->
+    
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css'>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
+    
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
+    * {
+    box-sizing: border-box;
+    }
+
+    body{
+      font-family: 微軟正黑體;
+    }
+
+    .bg{
+        background-color: #6AD318;
+            
+    }
+       
+    .btn-1{
+        background-color: #FCA415;opacity: 0.8;
+        margin: 5px;
+        text-align: center;
+    }
+
+    .swiper-container {
+            width: 100%;
+            height: 100%;
+    }
+
+    .banner{
+        width: 100%;
+        height: calc(100vh-56px);
+        margin: 60px 0 60px 0;
+    }
+
+    .bg_1,.bg_2{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    }
+
+    .bg_1{
+    background-image: url('img/小孩吃素01-已修復.jpg');
+    }
+
+    .bg_2{
+    background-image: url('img/素食Banner.jpg');
+    }
+
+    .c-1{
+      font-size: 50px;
+      text-align: center;
+      color: blue;
+    }
+    div.laptop-wrapper {
+        position: relative;
+        padding-top: 24px;
+        padding-bottom: 67%;
+        height: 0;
+    }
+    div.laptop-wrapper iframe {
+        box-sizing: border-box;
+        background: url(https://i.stack.imgur.com/zZNgk.png) center center no-repeat;
+        background-size: contain;
+        padding: 11.9% 15.5% 14.8%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%
+    }
+
+    /* 2nd example :  BACKGROUND IMAGE */
+    div.desktop-wrapper {
+        position: relative;
+        padding-top: 24px;
+        padding-bottom: 67%;
+        height: 0;
+    }
+    div.desktop-wrapper iframe {
+        box-sizing: border-box;
+        background: url(http://img01.deviantart.net/05b6/i/2011/030/8/5/apple_led_cinema_screen_by_fisshy94-d38e3o5.png) center center no-repeat;
+        background-size: contain;
+        padding: 3.4% 10.8% 18.6%;/* 11.9% 15.5% 14.8% */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    #video-container {
+      position: absolute;
+    }
+    #video-container {
+      top:0%;
+      left:0%;
+      height:100%;
+      width:100%;
+      overflow: hidden;
+    }
+    video {
+      position:absolute;
+      z-index:0;
+    }
+    video.fillWidth {
+      width: 100%;
+    }
+
+    section-1 {
+    /* background-color: #BBFF68;opacity:0.8; */
+    /* background-image: url(https://image.cdn-eztravel.com.tw/zVnu0d8iWmkxLUc_Nl1FLQMn7Az7oCpiM26idRfIJr0/g:ce/aHR0cDovL3ZhY2F0aW9uLmNkbi1lenRyYXZlbC5jb20udHcvaW1nL1ZEUi9DTl8xMzk3NDUzMDAzLmpwZw.jpg); */
+    background-image: url(img/BC-2.jpg);
+    
+    min-height: 95vh;
+    font-family: 'Fira Sans', sans-serif,微軟正黑體;
+    display: flex;
+    margin: 15px 0 15px 0;
+    }
+
+    .blog-slider {
+    width: 95%;
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+    padding: 25px;
+    border-radius: 25px;
+    height: 550px;
+    transition: all .3s;
+    }
+    @media screen and (max-width: 992px) {
+    .blog-slider {
+        max-width: 680px;
+        height: 400px;
+    }
+    }
+    @media screen and (max-width: 768px) {
+    .blog-slider {
+        min-height: 550px;
+        height: auto;
+        margin: 180px auto;
+    }
+    }
+    @media screen and (max-height: 500px) and (min-width: 992px) {
+    .blog-slider {
+        height: 350px;
+    }
+    }
+    .blog-slider__item {
+    display: flex;
+    align-items: center;
+    }
+    @media screen and (max-width: 768px) {
+    .blog-slider__item {
+        flex-direction: column;
+    }
+    }
+    .blog-slider__item.swiper-slide-active .blog-slider__img img {
+    opacity: 1;
+    transition-delay: .3s;
+    }
+    .blog-slider__item.swiper-slide-active .blog-slider__content > * {
+    opacity: 1;
+    transform: none;
+    }
+    .blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(1) {
+    transition-delay: 0.3s;
+    }
+    .blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(2) {
+    transition-delay: 0.4s;
+    }
+    .blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(3) {
+    transition-delay: 0.5s;
+    }
+    .blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(4) {
+    transition-delay: 0.6s;
+    }
+    .blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(5) {
+    transition-delay: 0.7s;
+    }
+    .blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(6) {
+    transition-delay: 0.8s;
+    }
+    .blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(7) {
+    transition-delay: 0.9s;
+    }
+    .blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(8) {
+    transition-delay: 1s;
+    }
+    .blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(9) {
+    transition-delay: 1.1s;
+    }
+    .blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(10) {
+    transition-delay: 1.2s;
+    }
+    .blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(11) {
+    transition-delay: 1.3s;
+    }
+    .blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(12) {
+    transition-delay: 1.4s;
+    }
+    .blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(13) {
+    transition-delay: 1.5s;
+    }
+    .blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(14) {
+    transition-delay: 1.6s;
+    }
+    .blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(15) {
+    transition-delay: 1.7s;
+    }
+    .blog-slider__img {
+    width: 300px;
+    flex-shrink: 0;
+    height: 300px;
+    background-image: linear-gradient(147deg, #6AD318 0%, #6AD318 74%);
+    /* box-shadow: 4px 5px 30px 1px rgba(248, 171, 3, 0.952); */
+    border-radius: 20px;
+    transform: translateX(-80px);
+    overflow: hidden;
+    }
+    .blog-slider__img:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%); */
+    border-radius: 20px;
+    opacity: 0.8;
+    }
+    .blog-slider__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 0;
+    border-radius: 20px;
+    transition: all .3s;
+    }
+    @media screen and (max-width: 768px) {
+    .blog-slider__img {
+        transform: translateY(-50%);
+        width: 90%;
+    }
+    }
+    @media screen and (max-width: 576px) {
+    .blog-slider__img {
+        width: 95%;
+    }
+    }
+    @media screen and (max-height: 500px) and (min-width: 992px) {
+    .blog-slider__img {
+        height: 270px;
+    }
+    }
+    .blog-slider__content {
+    padding-right: 25px;
+    }
+    @media screen and (max-width: 768px) {
+    .blog-slider__content {
+        margin-top: -80px;
+        text-align: center;
+        padding: 0 30px;
+    }
+    }
+    @media screen and (max-width: 576px) {
+    .blog-slider__content {
+        padding: 0;
+    }
+    }
+    .blog-slider__content > * {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: all .4s;
+    }
+    .blog-slider__code {
+    color: #7b7992;
+    margin-bottom: 15px;
+    display: block;
+    font-weight: 500;
+    }
+    .blog-slider__title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0d0925;
+    margin-bottom: 20px;
+    }
+    .blog-slider__text {
+    color: #4e4a67;
+    margin-bottom: 30px;
+    line-height: 1.5em;
+    }
+    .blog-slider__button {
+    display: inline-flex;
+    /* background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%); */
+    padding: 15px 35px;
+    border-radius: 50px;
+    color: #fff;
+    box-shadow: 0px 14px 80px rgba(252, 56, 56, 0.4);
+    text-decoration: none;
+    font-weight: 600px;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 1px;
+    }
+    @media screen and (max-width: 576px) {
+    .blog-slider__button {
+        width: 100%;
+    }
+    }
+    .blog-slider .swiper-container-horizontal > .swiper-pagination-bullets, .blog-slider .swiper-pagination-custom, .blog-slider .swiper-pagination-fraction {
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    }
+    .blog-slider__pagination {
+    position: absolute;
+    z-index: 21;
+    right: 20px;
+    width: 11px !important;
+    text-align: center;
+    left: auto !important;
+    top: 50%;
+    bottom: auto !important;
+    transform: translateY(-50%);
+    }
+    @media screen and (max-width: 768px) {
+    .blog-slider__pagination {
+        transform: translateX(-50%);
+        left: 50% !important;
+        top: 205px;
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    }
+    .blog-slider__pagination.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 8px 0;
+    }
+    @media screen and (max-width: 768px) {
+    .blog-slider__pagination.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 5px;
+    }
+    }
+    .blog-slider__pagination .swiper-pagination-bullet {
+    width: 11px;
+    height: 11px;
+    display: block;
+    border-radius: 10px;
+    background: #062744;
+    opacity: 0.2;
+    transition: all .3s;
+    }
+    .blog-slider__pagination .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #fd3838;
+    height: 30px;
+    box-shadow: 0px 0px 20px rgba(252, 56, 56, 0.3);
+    }
+    @media screen and (max-width: 768px) {
+    .blog-slider__pagination .swiper-pagination-bullet-active {
+        height: 11px;
+        width: 30px;
+    }
+    } 
+
+    
+
+    /* <!-- /card-3素食介紹 -->  */
+        .section-content {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            padding-bottom: 10px;
+        }
+
+        /* modals */
+        .service-modal .modal-dialog {
+            margin: auto;
+            height: 100%;
+            width: auto;
+         }
+
+        .service-modal .modal-content {
+            border-radius: 0;
+            background-clip: border-box;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            border: none;
+            min-height: 100%;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .service-modal .modal-content h2 {
+            margin-bottom: 15px;
+            font-size: 3em;
+        }
+
+        .service-modal .modal-content img {
+             margin-bottom: 30px;
+        }
+
+        .service-modal .modal-content p {
+             margin-bottom: 30px;
+        }
+
+        .service-modal .close-modal {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: transparent;
+            top: 50px;
+            right: 50px;
+            cursor: pointer;
+        }
+
+        .service-modal .close-modal .close-icon {
+            height: 30px;
+            width: 1px;
+            margin-left: 15px;
+            background-color: #555;
+            transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            z-index: 1000;
+        }
+
+        .service-modal .close-modal:hover .close-icon {
+            background-color: #e74c3c;
+        }
+
+        .service-modal .close-modal .close-icon .close-icon-r {
+            height: 30px;
+            width: 1px;
+            background-color: #555;
+            transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            /* IE 9 */
+            -webkit-transform: rotate(90deg);
+            /* Safari and Chrome */
+            z-index: 1000;
+        }
+
+        .service-modal .close-modal:hover .close-icon .close-icon-r {
+            background-color: #e74c3c;
+        }
+
+        /* <!-- //健康素知識 --> */
+        .card-4{
+            width: 100%;
+            height: 450px;
+            /* background-color: #BBFF68;  */
+            background-image: url(img/BC-2.jpg);
+            margin: 30px 0 30px 0;   
+        }
+
+        .section-4{ 
+            background-size:cover;
+        }
+        .carousel-3d-slide {
+            height: auto !important;
+            background-color: rgba(0, 0, 0, 0.25) !important;
+        }
+
+        /* /素友好 */
+        section-5 {
+            height: 20vh;
+            width: 100vw;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: box;
+            display: flex;
+            -webkit-box-align: center;
+            -moz-box-align: center;
+            -o-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -moz-box-pack: center;
+            -o-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            background: #fff;
+        
+        }
+        .Marquee {
+            /* background: -webkit-linear-gradient(225deg, #008ed9, #8b00db);
+            background: -moz-linear-gradient(225deg, #008ed9, #8b00db);
+            background: -o-linear-gradient(225deg, #008ed9, #8b00db);
+            background: -ms-linear-gradient(225deg, #008ed9, #8b00db);
+            background: linear-gradient(-135deg, #008ed9, #8b00db); */
+            width: 70vw;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 1em;
+            color: #fff;
+            font-weight: 100;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: box;
+            display: flex;
+            -webkit-box-align: center;
+            -moz-box-align: center;
+            -o-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .Marquee-content {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: box;
+            display: flex;
+            -webkit-animation: marquee 10s linear infinite running;
+            -moz-animation: marquee 10s linear infinite running;
+            -o-animation: marquee 10s linear infinite running;
+            -ms-animation: marquee 10s linear infinite running;
+            animation: marquee 10s linear infinite running;
+        }
+        .Marquee-content:hover {
+            -webkit-animation-play-state: paused;
+            -moz-animation-play-state: paused;
+            -o-animation-play-state: paused;
+            -ms-animation-play-state: paused;
+            animation-play-state: paused;
+        }
+        .Marquee-tag {
+            width: 200px;
+            margin: 0 0.5em;
+            padding: 0.5em;
+            background: rgba(255,255,255,0.1);
+            display: -webkit-inline-box;
+            display: -moz-inline-box;
+            display: -webkit-inline-flex;
+            display: -ms-inline-flexbox;
+            display: inline-box;
+            display: inline-flex;
+            -webkit-box-align: center;
+            -moz-box-align: center;
+            -o-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -moz-box-pack: center;
+            -o-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-transition: all 0.2s ease;
+            -moz-transition: all 0.2s ease;
+            -o-transition: all 0.2s ease;
+            -ms-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+        }
+        .Marquee-tag:hover {
+            background: rgba(255,255,255,0.5);
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -o-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        @-moz-keyframes marquee {
+        0% {
+            -webkit-transform: translateX(0);
+            -moz-transform: translateX(0);
+            -o-transform: translateX(0);
+            -ms-transform: translateX(0);
+            transform: translateX(0);
+        }
+        100% {
+            -webkit-transform: translate(-50%);
+            -moz-transform: translate(-50%);
+            -o-transform: translate(-50%);
+            -ms-transform: translate(-50%);
+            transform: translate(-50%);
+        }
+        }
+        @-webkit-keyframes marquee {
+        0% {
+            -webkit-transform: translateX(0);
+            -moz-transform: translateX(0);
+            -o-transform: translateX(0);
+            -ms-transform: translateX(0);
+            transform: translateX(0);
+        }
+        100% {
+            -webkit-transform: translate(-50%);
+            -moz-transform: translate(-50%);
+            -o-transform: translate(-50%);
+            -ms-transform: translate(-50%);
+            transform: translate(-50%);
+        }
+        }
+        @-o-keyframes marquee {
+        0% {
+            -webkit-transform: translateX(0);
+            -moz-transform: translateX(0);
+            -o-transform: translateX(0);
+            -ms-transform: translateX(0);
+            transform: translateX(0);
+        }
+        100% {
+            -webkit-transform: translate(-50%);
+            -moz-transform: translate(-50%);
+            -o-transform: translate(-50%);
+            -ms-transform: translate(-50%);
+            transform: translate(-50%);
+        }
+        }
+        @keyframes marquee {
+        0% {
+            -webkit-transform: translateX(0);
+            -moz-transform: translateX(0);
+            -o-transform: translateX(0);
+            -ms-transform: translateX(0);
+            transform: translateX(0);
+        }
+        100% {
+            -webkit-transform: translate(-50%);
+            -moz-transform: translate(-50%);
+            -o-transform: translate(-50%);
+            -ms-transform: translate(-50%);
+            transform: translate(-50%);
+        }
+        }
+
+        footer{
+              width: 100%;
+              height: 50px;
+              background-color: #6AD318;
+              margin: 20px 0 0 0;
+          }
+
+</style>
+<script>
+    window.console = window.console || function(t) {};
+  </script>
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+</script>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg fixed-top ">
+    <div class="container">
+    <a class="navbar-brand text-body" href="#"></a>
+    <img src="img/Vegan-Logo.png" width="45" height="45" class="d-inline-block align-top" alt="">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+            <a class="nav-link text-body btn-1 " href="#in">全球素名人
+            <span class="sr-only">(current)</span>
+            <!-- <button type="button" class="btn btn-warning"></button> -->
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-body btn-1 " href="#c2">關於素食</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-body btn-1" href="#">素食介紹</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-body btn-1" href="#">健康素知識</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-body btn-1" href="#">素友好連結</a>
+        </li>
+        </ul>
+    </div>
+    </div>
+    </nav>
+
+    <!-- /輪播 -->
+    <div class="banner ">
+        <div class="swiper-container">
+          <div class="swiper-wrapper ">
+            <div class="swiper-slide">
+              <div class="bag_1 d-lg-block d-none"></div>
+              <img src="img/小孩吃素01-已修復.jpg" class="d-block w-100 d-lg-non" alt="...">
+            </div>
+            <div class="swiper-slide">
+              <div class="bag_2 d-lg-block d-none"></div>
+              <img src="img/素食Banner.jpg" class="d-block w-100 d-lg-non" alt="...">
+            </div>
+            <!-- <div class="swiper-slide">
+              <div class="bag_3 d-lg-block d-none"></div>
+              <img src="https://www.xpgod.com/uploadfile/2016/1021/20161021042759743.jpg" class="d-block w-100 d-lg-non" alt="...">
+            </div> -->
+          </div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+    <!-- /card-1 全球---> 
+    <section id="in" class="py-3">
+        <div class="c-1 mb-3">素名人影片分享</div><hr style="height:5px;border-width:3;width:15%;background-color:black ">
+        <div class="container">
+          <div class="row">
+            <div class=" col-sm-5">
+              <h1 class="text-center">吃素好因緣</h1>
+              <h2 class="">天候無常,冷的時候很冷,熱的時候很熱,氣候變遷您有感受到嗎?聯合國指出,肉食是全球暖化的主因,吃素可以減碳。只要一人一天不吃肉,就能減碳7公斤。吃素還有什麼好處,來看看素名人怎麼說。</h2>
+            </div>  
+              <div class="col-sm-7">
+                <div class="desktop-wrapper">
+                  <iframe width="853" height="480" src="https://www.youtube.com/embed/rsYVtxHtzc8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  </div>
+                  </div>
+                </div>
+             </div>     
+      </section>    
+
+    <!-- /card-2關於素食---> 
+    <div class="c-1 ">關於素食</div><hr style="height:5px;border-width:3;width:15%;background-color:black ">
+    <section-1 id="c2" >
+        <div class="blog-slider" >   
+        <div class="blog-slider__wrp swiper-wrapper">     
+        <div class="blog-slider__item swiper-slide">       
+        <div class="blog-slider__img">
+        <img src="img/素食理念.png" alt="">
+        </div>
+        <div class="blog-slider__content">
+        <!-- <span class="blog-slider__code">26 December 2019</span> -->
+        <div class=" text-center blog-slider__title "><h1>素食理念</h1></div>
+        <div class="blog-slider__text">
+            <h6>素食主義（英語：vegetarianism），又稱蔬食主義，素食，蔬食（英語：plant-based food）等，是一種有關飲食的文化，主張不食用飛禽、走獸、魚蝦等動物的身體，也就是肉類，實踐這種飲食文化的人被稱為素食主義者（vegetarian），只食用五穀、蔬菜和水果等植物及其製品。世界各國或不同文化中的素食主義有所不同，有些素食主義者食用蜂蜜、奶類、起司、蛋類等不殺害動物也能取得的動物產出品。純素食主義者不食用動物相關製品，有些宗教也主張不食用具有強烈刺激性的植物，如五辛，主張素食主義的原因包括環保、健康、動物權利等議題，目前擁有全球最高素食人口比例與素食人口數的地方是印度。
+                相信對許多人而言，Vegan是個陌生的名詞。或許有人會認為Vegan等同於我們平常所說的素食（Vegetarian），事實上Vegan指的是純素主義，中心理念是「愛護動物」，不單單只限於飲食層面，同時也適用於日常的生活態度。因此純素主義意味著不食用任何動物相關製品、不使用動物毛皮、並反對任何剝削動物權益的行為理念。
+            </h6>
+        </div>
+        <!-- <a href="#" class="blog-slider__button">影片:5分鐘告訴你什麼是純素主義</a>   -->
+        </div>
+        </div>
+
+        <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+            <img src="img/素食理念.png" alt="">
+            </div>
+            <div class="blog-slider__content">
+            <!-- <span class="blog-slider__code">26 December 2019</span> -->
+            <div class=" text-center blog-slider__title"><h1>素食理念</h1></div>
+            <div class="blog-slider__text">
+                <h4>影片:5分鐘告訴你什麼是純素主義</h4>
+                <iframe width="400" height="350" src="https://www.youtube.com/embed/bq2frBWfVRk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!-- <a href="#" class="blog-slider__button">影片:5分鐘告訴你什麼是純素主義</a>   -->
+            </div>
+            </div>
+
+    <div class="blog-slider__item swiper-slide">
+        <div class="blog-slider__img">
+        <img src="img/素食替代品.png" alt="">
+        </div>
+        <div class="blog-slider__content">
+        <!-- <span class="blog-slider__code">26 December 2019</span> -->
+        <div class=" text-center blog-slider__title"><h1>素食替代品</h1></div>
+        <div class="blog-slider__text">
+            <h6>很多素食主義者選擇素食生活，是為了擁有更加健康的生活，當然也有很多人是因為信仰原因。大多數的人認為，吃素會缺法營養不健康，其實不然，素食替代品主要以：大豆、蔬菜、水果為主，以下介紹幾種素食食材，讓你的素食生活更加營養健康：
+                1.蔬菜類：
+                含有豐富的礦物質、多種維生素以及粗纖維質，是最重要的素食食材。
+                2.水果類：
+                含有大量纖維質，並有豐富的礦物質與維生素，充滿豐富的水分，其中又以維生素C的含量最受矚目。
+                3.五穀雜糧、堅果類：
+                含有豐富的澱粉、蛋白質與礦物質，維生素式提供人體熱量與糖分的主要來源。
+                4.蛋、豆、麵粉製品：
+                蛋、豆、與麵粉類製品，含有豐富的蛋白質，能補充大腦所需的能量，也能提供修護人體組織所需的營養。
+                5.奶類及奶製品：
+                奶類及奶製品，含有豐沛的礦物質，其中最豐富的營養素就是鈣質。奶類也是豐富蛋白質的來源。    
+                6.油脂類：
+                油脂類主要提供人體能量的來源，將脂肪轉換成熱量，供應人體每天活量所需的基礎能量。
+                如：葵花籽油、玉米油、花生油、橄欖油、葡萄籽油、芝麻油、沙拉醬(油脂製品)。
+                </h6>
+        </div>
+        <!-- <a href="#" class="blog-slider__button">影片:5分鐘告訴你什麼是純素主義</a>   -->
+        </div>
+        </div>
+
+        <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+            <img src="img/素食替代品.png" alt="">
+            </div>
+            <div class="blog-slider__content">
+            <!-- <span class="blog-slider__code">26 December 2019</span> -->
+            <div class=" text-center blog-slider__title"><h1>素食替代品</h1></div>
+            <div class=" text-center blog-slider__text">
+                <h4>素食飲食指南</h4>
+            </div>
+            </div>
+            </div>
+        
+        <div class="blog-slider__item swiper-slide">
+        <div class="blog-slider__img">
+        <img src="img/素食替代品.png" alt="">
+        </div>
+        <div class="blog-slider__content">
+        <!-- <span class="blog-slider__code">26 December 2019</span> -->
+        <div class=" text-center blog-slider__title"><h1>素食替代品</h1></div>
+        <div class=" text-center blog-slider__text">
+            <h4>影片:最全的素食替代品指南 </h4>
+            <iframe width="400" height="350" src="https://www.youtube.com/embed/8FqdGBYbibQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- <a href="#" class="blog-slider__button">點選看更多</a> -->
+        </div>
+        </div>
+        </div>
+        <div class="blog-slider__pagination"></div>
+        </div>
+    </section-1>
+       
+   <!-- /card-3素食介紹 --> 
+   <section-3 id="services"  class="py-3">
+    <div class="section-content">
+    <div class="container">
+    <div class="c-1">素食介紹</div><hr style="height:5px;border-width:3;width:15%;background-color:black ">
+    <div class="row">
+    <div class="col-sm-12  ">
+    <div class="card-group-wrapper">
+    <div class="card-group">
+    <div class="card">
+    <div class="card-block">
+    
+    </div>
+    <img src="img/常見的素食種類-0615.jpg" class="card-img-top" alt="img-2" width="390" height="260">
+    <div class="card-block">
+        <h2 class="card-title text-center">素食種類</h2>
+    <p class="card-text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo sunt labore cumque ad quae dolorum laboriosam nam dolore cupiditate, et, recusandae fugiat porro, quod vitae magni animi illum earum amet.</p>
+    <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#serviceModal1">learn more</button>
+    </div>
+    </div>
+    <div class="service-modal modal fade" id="serviceModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal" aria-label="Close">
+        <div class="close-icon">
+        <div class="close-icon-r">
+        </div>
+        </div>
+        </div>
+        <div class="modal-body">
+        <h2 class="modal-title" id="myModalLabel">素食種類</h2>
+        <!-- <img src="img/常見的素食種類-0615.jpg"  alt=".." > -->
+        <p>全球各地的吃素傳統不盡相同，常見的吃法大致可分為以下幾大類：
+            1.純素：
+                又稱全素，不吃五辛也不食用雞蛋、乳製品，甚至葷素
+                一起使用的鍋子都不使用，純粹以乾淨蔬果、穀類為飲食之
+                 道，此為純素飲食。
+            2.奶素：
+               不吃蛋及蛋製品，但會食用奶類和其相關產品。
+            3.蛋素：
+               不吃奶及奶製品，但會食用蛋類和其相關產品。
+            4.蛋奶素：
+               吃蛋（未經授精蛋不會孵化），也吃奶及奶製品，但不吃五
+               辛。
+            5.植物五辛素：
+               不吃蛋，不吃奶及奶製品，但會食用任何植物性含五辛，主
+               張以非動物性為出發點。
+            6.蛋奶五辛素：
+               吃蛋（未經授精蛋不會孵化），也吃奶及奶製品，及任何植
+               物性含五辛等，和其相關產品。主張以非殺害生命為出發
+               點。
+            7.半素食者：
+                a.方便素食：
+                   在生活中盡量選擇素食，但如果條件不允，也可以食用肉
+                   類。
+                b.鍋邊素食
+                   在生活中只食用素食，但這些素食可允許和動物製成的食
+                   品混雜在一起，或是接受使用與葷食共煮過的鍋具及碗
+                   盤。
+            </p>
+            <iframe width="400" height="400" src="https://www.youtube.com/embed/a9Hfapj9vVs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        </div>
+        </div>
+        </div>
+
+    <div class="card">
+    <div class="card-block">
+    </div>
+    <img src="img/吃素原因.jpg" class="card-img-top" alt="img-2" width="390" height="260">
+    <div class="card-block">
+        <h2 class="card-title text-center">吃素原因</h2>
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis sed praesentium accusamus dolorem, amet reiciendis ad atque dolor similique omnis, commodi doloremque nobis et, odio.</p>
+    <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#serviceModal2">learn more</button>
+    </div>
+    </div>
+
+    <div class="service-modal modal fade" id="serviceModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal" aria-label="Close">
+        <div class="close-icon">
+        <div class="close-icon-r">
+        </div>
+        </div>
+        </div>
+        <div class="modal-body">
+        <h2 class="modal-title" id="myModalLabel">吃素原因</h2>
+        <!-- <img src="https://hd.unsplash.com/photo-1461773518188-b3e86f98242f" alt="..."> -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id assumenda iusto totam reprehenderit, similique, voluptatem unde suscipit temporibus voluptatum! Aspernatur, laboriosam architecto explicabo rem sed veniam similique expedita, aliquam beatae, animi ipsam, sint at quae praesentium! Repellat a totam corporis eveniet obcaecati maxime dicta voluptates eum debitis nulla, consequuntur! Rem!</p>
+        </div>
+        </div>
+        </div>
+        </div>
+
+    <div class="card">
+    <div class="card-block">
+    </div>
+    <img src="img/素人口最多地區.jpg" class="card-img-top" alt="img-2" width="390" height="260">
+    <div class="card-block">
+        <h2 class="card-title text-center">全球素人口最多地區</h2>
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum aliquam doloremque aperiam libero ipsam repellat obcaecati est nihil cum quibusdam minus nobis, qui necessitatibus distinctio.</p>
+    <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#serviceModal3">觀看更多</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="service-modal modal fade" id="serviceModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div type="button" class="close-modal" data-dismiss="modal" aria-label="Close">
+        <div class="close-icon">
+        <div class="close-icon-r">
+        </div>
+        </div>
+        </div>
+        <div class="modal-body">
+        <h2 class="modal-title" id="myModalLabel">素人口最多地區</h2>
+        <!-- <img src="https://hd.unsplash.com/photo-1429051883746-afd9d56fbdaf" alt="..."> -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id assumenda iusto totam reprehenderit, similique, voluptatem unde suscipit temporibus voluptatum! Aspernatur, laboriosam architecto explicabo rem sed veniam similique expedita, aliquam beatae, animi ipsam, sint at quae praesentium! Repellat a totam corporis eveniet obcaecati maxime dicta voluptates eum debitis nulla, consequuntur! Rem!</p>
+        </div>
+        </div>
+        </div>
+        </div>
+    </section-3>
+
+
+    <!-- //健康素知識 -->
+    <div class="card-4">
+        <div class="c-1 mb-3">健康素知識</div><hr style="height:5px;border-width:3;width:15%;background-color:black ">
+          <section-4 id="section-4">
+              <div id="carousel">
+                  <carousel-3d :autoplay="true" :autoplay-timeout="2400">
+                  <slide :index="0"><a href="https://www.merit-times.com.tw/NewsPage.aspx?unid=578064"><img src="img/精選健康素知識.jpg" title="精選健康素知識" width="ˇ500" height="280" /></a></slide>
+                  <slide :index="1"><a href="https://www.youtube.com/watch?v=-C0EoXjpWGQ&list=PLGXSnXrHOwfPgZ6dZe670-bCzNQ-Yls-P"><img src="img/影片-吃素的好處.jpg" title="影片-吃素的好處" width="ˇ500" height="280" /></a></slide>
+                  <slide :index="2"><a href="https://www.suiis.com/info/"><img src="img/素健康資訊網.jpg" title="素健康資訊網" width="ˇ500" height="280" /></a></slide>
+                  <slide :index="3"><a href="https://www.youtube.com/watch?v=EaSyxfNHk_E&list=PLGXSnXrHOwfPgZ6dZe670-bCzNQ-Yls-P&index=4"><img src="img/影片-蔬食救地球.jpg" title="影片-蔬食救地球" width="ˇ500" height="280" /></a></slide>
+                  
+                  
+                  </carousel-3d>
+                  </div>
+                  <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+                  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.7/vue.js'></script>
+                  <script src='https://rawgit.com/Wlada/vue-carousel-3d/master/dist/vue-carousel-3d.min.js'></script>
+                  <script id="rendered-js">
+                  //https://github.com/Wlada/vue-carousel-3d
+                  new Vue({
+                    el: '#carousel',
+                    data: {
+                      slides: 7 },
+                  
+                    components: {
+                      'carousel-3d': Carousel3d.Carousel3d,
+                      'slide': Carousel3d.Slide } });
+                  //# sourceURL=pen.js
+                      </script>
+               </section-4>
+      </div>
+
+    <!-- //素友好 -->
+    <div class="c-1 mb-3">素友好連結</div><hr style="height:5px;border-width:3;width:15%;background-color:black ">
+    <section-5 id="card-5" translate="no">
+      <div class="Marquee">
+      <div class="Marquee-content">
+      <div class="Marquee-tag">
+        <a href="https://tour.suiis.com/">
+          <img  alt="tour.suiis" src="img/素.JPG" >
+      </div>
+      <div class="Marquee-tag">
+        <a href="https://food.suiis.com/">
+          <img  alt="tour.suiis" src="img/食.jpg">
+      </div>
+      <div class="Marquee-tag">
+        <a href="https://www.vegue.me/index.php?gclid=Cj0KCQjwoPL2BRDxARIsAEMm9y9NHMI6BPjz6amBXHjoU4VEnwF4nHBPgnTj6GedCaCoJbapFrt4xRAaAqPtEALw_wcB">
+          <img  alt="tour.suiis" src="img/唯素購物.jpg" >
+      </div>
+      <div class="Marquee-tag">
+        <a href="https://www.suudays.com/v2/official?gclid=EAIaIQobChMIw_Cuv47H6gIVTT5gCh0Sdgh7EAAYASAAEgJzW_D_BwE">
+          <img  alt="tour.suiis" src="img/素食食譜.JPG">
+      </div>
+      <div class="Marquee-tag">
+        <a href="http://www.vegelife.com.tw/vege/list_restr.asp?idRg=&idCity=10&idDistr=144&searchClass=1">
+          <img  alt="tour.suiis" src="img/素食生活網.JPG" width="120" height="60">
+      </div>
+     
+      
+          </div>
+          </div>
+          </div>
+      </section-5>
+
+      <footer></footer>
+
+        <!-- //素友好 -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src='https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js'></script>
+        <script id="rendered-js">
+        jQuery(document).ready(function ($) {
+          $('.slick.marquee').slick({
+            speed: 5000,
+            autoplay: true,
+            autoplaySpeed: 0,
+            centerMode: true,
+            cssEase: 'linear',
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            variableWidth: true,
+            infinite: true,
+            initialSlide: 1,
+            arrows: false,
+            buttons: false });
+
+        });
+        //# sourceURL=pen.js
+            </script>
+                
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js'></script>
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+     
+
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
+        <script id="rendered-js">
+        var swiper = new Swiper('.blog-slider', {
+          spaceBetween: 30,
+          effect: 'fade',
+          loop: true,
+          mousewheel: {
+            invert: false },
+        
+          // autoHeight: true,
+          pagination: {
+            el: '.blog-slider__pagination',
+            clickable: true } });
+        //# sourceURL=pen.js
+            </script>
+
+        <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            centeredSlides: true,
+            autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+</script>
+</body>
+</html>
